@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports</title>
+</head>
+<body>
+<h2 style="direction: rtl">
+    <a href="{% url 'reports_page' %}?query=1">لیست تمامی برندهایی که ملیت آنها Korea است</a>
+</h2>
+<form action="{% url 'reports_page' %}" method="get" style="direction: rtl;font-size: 1.5rem">
+    <input type="hidden" name="query" value="2">
+    <input type="text" name="brand">
+    <input type="submit" style="direction: rtl;font-size: 1.5rem"
+           value="لیست تمامی موبایل هایی که برند آن یکی از برند های ورودی باشد">
+</form>
+<h2 style="direction: rtl">
+    <a href="{% url 'reports_page' %}?query=3">لیست تمامی موبایل هایی که ملیت برند با کشور سازنده ی آن برابر است</a>
+</h2>
+</body>
+</html>

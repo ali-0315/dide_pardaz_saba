@@ -1,0 +1,53 @@
+form {
+    display: inline-block;
+    background-color: #dbeaf5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 1rem !important;
+    direction: rtl;
+    text-align: right;
+    float: right;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    direction: rtl;
+}
+
+button {
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    float: right;
+}
+
+button:hover {
+    background-color: #005353;
+}
+
+.message-style {
+    text-align: center;
+    direction: rtl;
+}
