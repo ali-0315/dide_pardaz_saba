@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 from django.views.generic import FormView, TemplateView
 
 from .forms import PhoneModelform, BrandModelform
-from .models import Phone
+from .models import Phone, Brand
 
 
 def home_view(request):
@@ -45,7 +45,7 @@ def reports_view(request):
     if not query:
         return render(request, 'products_module/reports_page.html')
     elif int(query) == 1:
-        data = list(Phone.objects.filter(brand__brand_nationality='Korea').values())
+        data = list(Brand.objects.filter(brand_nationality='Korea').values())
     elif int(query) == 2:
         brand = request.GET.get('brand')
         data = list(Phone.objects.filter(brand__brand_name__iexact=brand).values())
